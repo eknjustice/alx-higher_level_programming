@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
-/usr/bin/python3 main.py
-=======
 python3 main.py
->>>>>>> 73ba7560b3e027310ae26ec54c0963c79f10be73
