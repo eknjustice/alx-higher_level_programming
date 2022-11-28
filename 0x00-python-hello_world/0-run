@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/bin/env bash
 /usr/bin/python3 python main.py
