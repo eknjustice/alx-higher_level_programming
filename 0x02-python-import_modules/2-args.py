@@ -13,6 +13,6 @@ else:
         print("{:d}: {:s}".format(i, argv[i]))
     else:
         print("{:d} arguments:".format(n))
-        while i <= n:
+        while i < len(argv):
             print("{:d}: {:s}".format(i, argv[i]))
             i += 1
