@@ -8,4 +8,5 @@ def print_reversed_list_integer(my_list=[]):
         print("{:d}".format(my_list[i]))
         p -= 1
         i += 1
-    
+if __name__ == "__main__":
+    print_reversed_list_integer
