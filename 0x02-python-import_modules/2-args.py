@@ -1,18 +1,16 @@
 #!/usr/bin/python3
-def arguments():
-    words = input()
-    i = 0
-    argv = words.split()
-    argc = len(argv)
-    if argc == 0 and words == "enter":
-        print(argc, "arguments:")
-    else:
-        if argc == 1:
-            print(argc, "argument:")
-            print("{:d}".format(argc), argv[argc])
-        else:
-            print(argc, "arguments:")
-            for i in range(argc):
-                print(i, argv[i])
+import sys
 
-arguments()
+n = len(sys.argv) - 1
+    
+if n == 0:
+    print("{:d} argument.".format(n))
+else:
+    if n == 1:
+        print("{:d} argument:".format(n))
+    else:
+        print("{:d} arguments:".format(n))
+        i = 1
+    while i <= n:
+        print("{:d}: {:s}".format(i, sys.argv[i]))
+        i += 1
